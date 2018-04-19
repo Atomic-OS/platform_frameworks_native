@@ -462,6 +462,7 @@ status_t GraphicBuffer::unflatten(
             width = height = stride = format = usage_deprecated = 0;
             layerCount = 0;
             usage = 0;
+            native_handle_delete(const_cast<native_handle*>(handle));
             handle = NULL;
             ALOGE("unflatten: registerBuffer failed: %s (%d)", strerror(-err), err);
             return err;
