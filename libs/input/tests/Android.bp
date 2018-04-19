@@ -28,7 +28,4 @@ cc_test {
 cc_library_static {
     name: "StructLayout_test",
     srcs: ["StructLayout_test.cpp"],
-    cflags: [
-        "-O0",
-    ],
 }
