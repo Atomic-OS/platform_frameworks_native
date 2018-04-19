@@ -107,6 +107,8 @@ LOCAL_EXPORT_SHARED_LIBRARY_HEADERS := \
 
 LOCAL_CFLAGS += -Wall -Werror -Wunused -Wunreachable-code -std=c++1z
 
+LOCAL_SDCLANG_LTO := true
+
 include $(BUILD_SHARED_LIBRARY)
 
 ###############################################################
